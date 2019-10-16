@@ -11,3 +11,5 @@ jobs:
 
     - name: Use Node.js ${{ matrix.node-version }}
       uses: docker://openapitools/openapi-generator-cli
+      with:
+        args: ./generate.sh
