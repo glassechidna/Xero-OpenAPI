@@ -9,7 +9,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
 
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: generate shiz
       uses: docker://openapitools/openapi-generator-cli
       with:
-        args: ./generate.sh
+        args: docker-entrypoint.sh ./generate.sh
