@@ -12,4 +12,4 @@ jobs:
     - name: generate shiz
       uses: docker://openapitools/openapi-generator-cli
       with:
-        args: docker-entrypoint.sh ./generate.sh
+        args: ./ci.sh
